@@ -7,8 +7,6 @@ import java.awt.TextArea;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.sql.SQLException;
 
 import javax.swing.*;
@@ -72,7 +70,7 @@ public class FirstPage extends JFrame {
 	}
 
 	void addGoods() {
-		for(int i = 0;i < 10;i++) {
+		for(int i = 0;i < 50;i++) {
 		JPanel p = new JPanel();
 		JPanel p_1 = new JPanel();
 		p.setLayout(new GridLayout(1,3,4,4));
@@ -234,7 +232,7 @@ class Publish extends JFrame{
 			double d=Double.parseDouble(tx4.getText());
 			String e=tx5.getText();
 				boolean f=false;
-				for(int i=0;i<5;i++) {
+				for(int i=0;i<50;i++) {
 					if(jdbc.form[0][i].equals(a)) {
 						JOptionPane.showMessageDialog(con, "ID重复，请重新选择后输入！");
 						f=true;break;
@@ -298,14 +296,14 @@ class BuyWindow extends JFrame{
 class SearchOver extends JFrame{
 public SearchOver(int a) {
 	String str=a+"";
-	for(int i=0;i<5;i++) {
+	for(int i=0;i<50;i++) {
 		if(jdbc.form[0][i].equals(str)) {
 			JPanel p = new JPanel();
 			JPanel p_1 = new JPanel();
 			p.setLayout(new GridLayout(1,3,4,4));
 			p_1.setLayout(new GridLayout(2,1,4,4));
 			JButton jb1 = new JButton("购买");
-			JButton jb2 = new JButton("评论");
+			Comment jb2 = new Comment("评论");
 			JButton jb3 = new JButton("聊天");
 			jb1.addActionListener(new ActionListener() {
 				
@@ -319,7 +317,7 @@ public SearchOver(int a) {
 				
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					
+					jb2.new Show();
 					
 				}
 			});

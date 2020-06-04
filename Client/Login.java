@@ -102,10 +102,3 @@ static String userName;
 		
 	}
 }
-
-	/*public void actionPerformed(ActionEvent e) {
-		setVisible(false);
-		FirstPage fs = new FirstPage();
-	}
-}
-*/

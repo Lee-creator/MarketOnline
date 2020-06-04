@@ -11,8 +11,8 @@ public class jdbc {
 	 static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 	    static final String DB_URL = "jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";
 
-	    static final String USER = "";
-	    static final String PASS = "";
+	    static final String USER = "Lee";
+	    static final String PASS = "Lzh12345679";
 	    public static String[][] form=new String [5][100];
 	    
  public static void fill() throws SQLException{

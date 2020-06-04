@@ -38,7 +38,7 @@ public class Register extends JFrame {
 		ok.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				creatAccount();
+				createAccount();
 				JOptionPane.showMessageDialog(c, "注册成功,您的账号为" + Constant.a.getId());
 
 			}
@@ -55,7 +55,7 @@ public class Register extends JFrame {
 
 	}
 
-	public void creatAccount() {
+	public void createAccount() {
 
 		int ID = (int) (90000 * Math.random() + 10000);
 		String username = user_f.getText();

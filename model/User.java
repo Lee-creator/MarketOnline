@@ -3,8 +3,6 @@ package model;
 public class User {
     private Integer id;
 
-    private String phone;
-
     private String username;
 
     private String password;
@@ -16,14 +14,6 @@ public class User {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone == null ? null : phone.trim();
     }
 
     public String getUserName() {

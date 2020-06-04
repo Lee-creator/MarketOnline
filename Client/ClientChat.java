@@ -44,6 +44,7 @@ public class ClientChat extends JFrame {
 				setVisible(false);
 			}
 		} );*/
+		ta.setEditable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setVisible(true);
 		connect();
@@ -112,7 +113,7 @@ private class TFListener implements ActionListener{
 				
 				ta.setText(ta.getText()+"\n"+str);
 			}}catch(SocketException e) {
-				
+				e.printStackTrace();
 			}
 			catch(IOException e) {
 				e.printStackTrace();
